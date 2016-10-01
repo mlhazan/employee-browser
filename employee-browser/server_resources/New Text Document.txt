@@ -1,0 +1,16 @@
+create database db_employee;
+
+create table employee (
+    id int primary key, 
+    firstName varchar(20),
+    lastName varchar(20),
+    department varchar(20),
+    email varchar(50),
+    image varchar(50));
+
+insert into db_employee.employee(id, firstName, lastName, department, email, image) VALUES
+        (2, 'Ashlee','Simpson','Marketing', 'kross@dbemp.com','images/kross.jpg'),
+        (3, 'Pamela','Crawford','Account', 'crawford@dbemp.com','images/crawford.jpg'),
+        (4, 'Ronn','Millerson','Sales', 'millerson@dbemp.com','images/millerson.jpg'),
+        (5, 'Natile','Hoffmann','sales', 'hoffman@dbemp.com','images/hoffman.jpg'),
+        (6, 'Edward','Mcdevis','sales', 'mcdevis@dbemp.com','images/mcdevis.jpg');
